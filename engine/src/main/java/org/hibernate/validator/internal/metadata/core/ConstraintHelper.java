@@ -462,6 +462,8 @@ public class ConstraintHelper {
 			) );
 		}
 
+		putConstraint( tmpConstraints, MinAge.class, MinAgeValidator.class );
+		
 		if ( isJavaMoneyInClasspath() ) {
 			putConstraints( tmpConstraints, Negative.class, Arrays.asList(
 					NegativeValidatorForBigDecimal.class,
